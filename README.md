@@ -6,6 +6,6 @@
   <title>Let's Drowing!</title>
 </head>
 <body>
-  <h1>Hello, world!</h1>
+  <h1>예시용입니다</h1>
 </body>
 </html>
