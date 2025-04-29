@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -20,6 +21,7 @@
             align-items: flex-start; /* 왼쪽 정렬 */
             padding: 20px;
             font-family: Arial, sans-serif;
+            text-align: left; /* 글자 왼쪽 정렬 */
         }
 
         .header {
@@ -45,8 +47,8 @@
         }
 
         .button {
-            color: #FFFAE6;
-            font-size: 1.5em;
+            color: #505050; /* 글자 색상 #505050 */
+            font-size: 20px; /* 글자 크기 20px */
             margin: 10px 0;
             cursor: pointer;
             text-align: left;
@@ -70,12 +72,6 @@
 
         .show-submenu .submenu {
             display: flex;
-        }
-
-        /* Digital Painting 및 Ect. 버튼 스타일 */
-        .button {
-            color: #505050; /* 글자 색상 #505050 */
-            font-size: 20px; /* 글자 크기 20px */
         }
     </style>
 </head>
