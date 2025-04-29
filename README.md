@@ -15,16 +15,10 @@
         body {
             margin: 0;
             height: 100vh;
-            background: 
-                linear-gradient(45deg, #FFFAE6 25%, #FFFFFF 25%) 0 0,
-                linear-gradient(-45deg, #FFFAE6 25%, #FFFFFF 25%) 0 0,
-                linear-gradient(45deg, #FFFFFF 75%, #FFFAE6 75%) 0 0,
-                linear-gradient(-45deg, #FFFFFF 75%, #FFFAE6 75%) 0 0;
-            background-size: 50px 50px;
-            background-repeat: no-repeat;
+            background-color: #FFFAE6; /* 배경 색상 변경 */
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: flex-start; /* 왼쪽 정렬 */
             padding: 20px;
             font-family: Arial, sans-serif;
         }
@@ -32,17 +26,21 @@
         .header {
             font-family: 'KCCImkwontaek', sans-serif;
             font-size: 2em;
-            color: #333;
+            color: #FFADAD;
             cursor: pointer;
             text-align: left;
             width: 100%;
+        }
+
+        .header span {
+            display: block;
         }
 
         .button-container {
             display: flex;
             flex-direction: column;
             margin-top: 20px;
-            align-items: flex-start;
+            align-items: flex-start; /* 버튼들도 왼쪽 정렬 */
         }
 
         .button {
@@ -65,7 +63,7 @@
         }
 
         .submenu .submenu-button {
-            color: #FFFAE6;
+            color: #505050;
             font-size: 1.2em;
             margin: 5px 0;
             cursor: pointer;
@@ -84,7 +82,10 @@
 </head>
 <body>
 
-    <div class="header" id="header">Let's Draw!</div>
+    <div class="header" id="header">
+        <span>Let's</span>
+        <span>Draw!</span>
+    </div>
 
     <div class="button-container">
         <div class="button" id="digitalPaintingBtn">Digital Painting</div>
