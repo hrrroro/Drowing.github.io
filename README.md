@@ -15,24 +15,24 @@
         body {
             margin: 0;
             height: 100vh;
-            background-color: #FFFAE6; /* 배경 색상 변경 */
+            background-color: #FFFAE6;
             display: flex;
             flex-direction: column;
-            align-items: flex-start; /* 왼쪽 정렬 */
+            align-items: flex-start;
             padding: 20px;
             font-family: Arial, sans-serif;
-            text-align: left; /* 글자 왼쪽 정렬 */
+            text-align: left;
         }
 
         .header {
             font-family: 'KCCImkwontaek', sans-serif;
-            font-size: 86px; /* 폰트 사이즈 설정 */
+            font-size: 86px;
             color: #FFADAD;
             cursor: pointer;
             text-align: left;
             width: 100%;
-            letter-spacing: 4%; /* 자간 4% */
-            line-height: 90%; /* 행간 90% */
+            letter-spacing: 4%;
+            line-height: 90%;
         }
 
         .header span {
@@ -43,12 +43,12 @@
             display: flex;
             flex-direction: column;
             margin-top: 20px;
-            align-items: flex-start; /* 버튼들도 왼쪽 정렬 */
+            align-items: flex-start;
         }
 
         .button {
-            color: #505050; /* 글자 색상 #505050 */
-            font-size: 20px; /* 글자 크기 20px */
+            color: #505050;
+            font-size: 20px;
             margin: 10px 0;
             cursor: pointer;
             text-align: left;
@@ -63,7 +63,7 @@
 
         .submenu .submenu-button {
             color: #505050;
-            font-size: 20px; /* 글자 크기 20px */
+            font-size: 20px;
             margin: 5px 0;
             cursor: pointer;
             text-align: left;
@@ -90,9 +90,9 @@
         <div class="submenu" id="digitalPaintingSubmenu">
             <div class="submenu-button">장비</div>
             <div class="submenu-button">그림툴</div>
+            <div class="submenu-button">그림체</div>
             <div class="submenu-button">도서</div>
             <div class="submenu-button">강의</div>
-            <div class="submenu-button">그림체</div>
         </div>
     </div>
 
