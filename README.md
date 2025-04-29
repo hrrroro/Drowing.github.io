@@ -5,10 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Let's Draw!</title>
     <style>
+        @font-face {
+            font-family: 'KCCImkwontaek';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/KCCImkwontaek.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         body {
             margin: 0;
             height: 100vh;
-            background: radial-gradient(circle, #FFFFFF 60%, #FFFAE6 60%);
+            background: 
+                linear-gradient(45deg, #FFFAE6 25%, #FFFFFF 25%) 0 0,
+                linear-gradient(-45deg, #FFFAE6 25%, #FFFFFF 25%) 0 0,
+                linear-gradient(45deg, #FFFFFF 75%, #FFFAE6 75%) 0 0,
+                linear-gradient(-45deg, #FFFFFF 75%, #FFFAE6 75%) 0 0;
+            background-size: 50px 50px;
+            background-repeat: no-repeat;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -17,29 +30,32 @@
         }
 
         .header {
+            font-family: 'KCCImkwontaek', sans-serif;
             font-size: 2em;
             color: #333;
             cursor: pointer;
+            text-align: left;
+            width: 100%;
         }
 
         .button-container {
             display: flex;
             flex-direction: column;
             margin-top: 20px;
+            align-items: flex-start;
         }
 
         .button {
-            background-color: #FFFAE6;
-            padding: 10px;
-            margin: 5px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
+            color: #FFFAE6;
+            font-size: 1.5em;
+            margin: 10px 0;
             cursor: pointer;
-            text-align: center;
+            text-align: left;
+            width: 100%;
         }
 
         .button:hover {
-            background-color: #FFF0C1;
+            color: #FFF0C1;
         }
 
         .submenu {
@@ -49,16 +65,16 @@
         }
 
         .submenu .submenu-button {
-            background-color: #FFFFFF;
-            border: 1px solid #ddd;
-            padding: 8px;
-            margin: 5px;
+            color: #FFFAE6;
+            font-size: 1.2em;
+            margin: 5px 0;
             cursor: pointer;
-            text-align: center;
+            text-align: left;
+            width: 100%;
         }
 
         .submenu .submenu-button:hover {
-            background-color: #F1F1F1;
+            color: #FFF0C1;
         }
 
         .show-submenu .submenu {
