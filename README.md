@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -25,11 +24,13 @@
 
         .header {
             font-family: 'KCCImkwontaek', sans-serif;
-            font-size: 2em;
+            font-size: 86px; /* 폰트 사이즈 설정 */
             color: #FFADAD;
             cursor: pointer;
             text-align: left;
             width: 100%;
+            letter-spacing: 4%; /* 자간 4% */
+            line-height: 90%; /* 행간 90% */
         }
 
         .header span {
@@ -52,10 +53,6 @@
             width: 100%;
         }
 
-        .button:hover {
-            color: #FFF0C1;
-        }
-
         .submenu {
             display: none;
             flex-direction: column;
@@ -64,19 +61,21 @@
 
         .submenu .submenu-button {
             color: #505050;
-            font-size: 1.2em;
+            font-size: 20px; /* 글자 크기 20px */
             margin: 5px 0;
             cursor: pointer;
             text-align: left;
             width: 100%;
         }
 
-        .submenu .submenu-button:hover {
-            color: #FFF0C1;
-        }
-
         .show-submenu .submenu {
             display: flex;
+        }
+
+        /* Digital Painting 및 Ect. 버튼 스타일 */
+        .button {
+            color: #505050; /* 글자 색상 #505050 */
+            font-size: 20px; /* 글자 크기 20px */
         }
     </style>
 </head>
