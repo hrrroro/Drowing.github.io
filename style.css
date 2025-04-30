@@ -10,7 +10,7 @@ body {
 
 .title {
   font-size: 72px;
-  color: #FFADAD; /* 기본 색상 */
+  color: #FFADAD;
   white-space: pre-line;
   margin-bottom: 1.5rem;
   line-height: 1.1;
@@ -18,12 +18,11 @@ body {
   font-weight: normal;
 }
 
-/* '마음껏 그려보세요' 글자 크기를 하위 메뉴보다 작게 설정 */
 .top-right {
   position: absolute;
   top: 1rem;
   right: 2rem;
-  font-size: 16px; /* 메뉴 하위 메뉴보다 작은 글자 크기 설정 */
+  font-size: 16px;
   font-family: 'YDYGO100', sans-serif;
   color: #7B7B7B;
 }
@@ -50,7 +49,7 @@ body {
   margin-left: 1rem;
   display: none;
   line-height: 1.6;
-  font-size: 18px; /* 하위 메뉴 글자 크기 */
+  font-size: 18px;
   opacity: 0;
   max-height: 0;
   overflow: hidden;
