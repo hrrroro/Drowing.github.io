@@ -27,6 +27,15 @@ body {
   color: #7B7B7B;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+  padding: 0 50px; /* 왼쪽, 오른쪽에 50px 여백 추가 */
+}
+
 .menu {
   font-size: 22px;
   font-family: 'YDYGO100', sans-serif;
@@ -38,12 +47,12 @@ body {
   cursor: pointer;
   margin-bottom: 1rem;
   font-weight: bold;
-  transition: transform 0.2s ease; /* hover 상태에서만 효과 */
+  transition: transform 0.2s ease;
 }
 
 /* 마우스 오버 시에만 크기 변환 */
 .main-menu:hover {
-  transform: scale(1.05); /* 마우스 올리면 크기 살짝 커짐 */
+  transform: scale(1.05);
 }
 
 .sub-menu {
