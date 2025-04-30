@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background: linear-gradient(45deg, #FFFAE6 25%, #FFFFFF 60%, #FFFAE6 100%);
-  font-family: 'KCCImkwontaek', sans-serif;
+  font-family: 'KCCImkwontaek', sans-serif; /* KCCImkwontaek 폰트 적용 */
   color: #000;
   height: 100vh;
   overflow: hidden;
@@ -14,7 +14,7 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   height: 100%;
-  margin: 0; /* 마진 제거 */
+  margin: 0;
 }
 
 .title {
@@ -23,8 +23,8 @@ body {
   white-space: pre-line;
   margin-bottom: 2rem;
   line-height: 1.1;
-  text-decoration: none; /* 링크의 기본 밑줄 제거 */
-  font-weight: normal; /* 링크의 글자 굵기 수정 */
+  text-decoration: none; /* 밑줄 제거 */
+  font-weight: normal; /* 글자 굵기 */
 }
 
 .title:hover {
