@@ -33,12 +33,14 @@ body {
 .main-menu {
   cursor: pointer;
   margin-bottom: 0.5rem;
+  font-weight: bold; /* 메인 메뉴 글자 두껍게 */
 }
 
 .sub-menu {
   margin-left: 1rem;
   display: none;
   line-height: 1.6;
+  font-size: 18px; /* 하위 메뉴 글자 크기 살짝 작게 */
 }
 
 .top-right {
