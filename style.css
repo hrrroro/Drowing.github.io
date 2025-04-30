@@ -14,7 +14,7 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   height: 100%;
-  margin: 0; /* 마진 제거 */
+  margin: 0;
 }
 
 .title {
@@ -22,7 +22,13 @@ body {
   color: #FFADAD;
   white-space: pre-line;
   margin-bottom: 2rem;
-  line-height: 1.1; /* 행간 조정 */
+  line-height: 1.1;
+  text-decoration: none; /* 링크의 기본 밑줄 제거 */
+  font-weight: normal; /* 링크의 글자 굵기 수정 */
+}
+
+.title:hover {
+  color: #FF7F7F; /* 마우스를 올렸을 때 색상 변경 */
 }
 
 .menu {
@@ -34,29 +40,29 @@ body {
 .main-menu {
   cursor: pointer;
   margin-bottom: 0.5rem;
-  font-weight: bold; /* 메인 메뉴 글자 두껍게 */
-  transition: transform 0.2s ease; /* 눌렀을 때 살짝 움직이는 효과 */
+  font-weight: bold;
+  transition: transform 0.2s ease;
 }
 
 .main-menu:active {
-  transform: scale(0.98); /* 클릭 시 살짝 크기 축소 */
+  transform: scale(0.98);
 }
 
 .sub-menu {
   margin-left: 1rem;
   display: none;
   line-height: 1.6;
-  font-size: 18px; /* 하위 메뉴 글자 크기 살짝 작게 */
+  font-size: 18px;
   opacity: 0;
   max-height: 0;
   overflow: hidden;
-  transition: opacity 0.3s ease, max-height 0.3s ease; /* 하위 메뉴 부드럽게 나타나도록 */
+  transition: opacity 0.3s ease, max-height 0.3s ease;
 }
 
 .sub-menu.show {
   display: block;
   opacity: 1;
-  max-height: 500px; /* 적당한 크기로 변경 */
+  max-height: 500px;
 }
 
 .top-right {
