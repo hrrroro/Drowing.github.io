@@ -1,69 +1,65 @@
+@font-face {
+  font-family: 'KCC-Imkwontaek';
+  src: url('fonts/KCC-Imkwontaek.woff') format('woff'),
+       url('fonts/KCC-Imkwontaek.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
   background: linear-gradient(45deg, #FFFAE6 25%, #FFFFFF 60%, #FFFAE6 100%);
-  font-family: 'KCCImkwontaek', sans-serif; /* KCCImkwontaek 폰트 적용 */
+  font-family: 'KCC-Imkwontaek', sans-serif; /* 'KCC-Imkwontaek' 폰트 적용 */
   color: #000;
   height: 100vh;
   overflow: hidden;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  height: 100%;
-  padding: 0 20px; /* 왼쪽 여백 추가 */
-}
-
 .title {
-  font-size: 72px; /* 적당한 크기로 설정 */
-  color: #FFADAD; /* 부드럽고 따뜻한 색상 */
+  font-size: 72px;
+  color: #FFADAD; /* 기본 색상 */
   white-space: pre-line;
   margin-bottom: 1.5rem;
   line-height: 1.1;
-  text-decoration: none; /* 밑줄 제거 */
+  text-decoration: none;
   font-weight: normal;
 }
 
-.title:hover {
-  color: #FF7F7F; /* 마우스를 올렸을 때 색상 변경 */
-}
-
+/* 호버 색상 변경 제거 */
 .menu {
-  font-size: 22px; /* 메뉴 글자 크기 */
+  font-size: 22px;
   font-family: 'YDYGO100', sans-serif;
   color: #505050;
-  padding: 10px 0; /* 위아래 여백 추가 */
+  padding: 10px 0;
 }
 
 .main-menu {
   cursor: pointer;
-  margin-bottom: 1rem; /* 메뉴 항목 간 간격을 넓혀서 보기 좋게 */
-  font-weight: bold; /* 메뉴 글자 두껍게 */
-  transition: transform 0.2s ease; /* 눌렀을 때 살짝 움직이는 효과 */
+  margin-bottom: 1rem;
+  font-weight: bold;
+  transition: transform 0.2s ease;
 }
 
 .main-menu:active {
-  transform: scale(0.98); /* 클릭 시 살짝 크기 축소 */
+  transform: scale(0.98);
 }
 
 .sub-menu {
   margin-left: 1rem;
   display: none;
   line-height: 1.6;
-  font-size: 18px; /* 하위 메뉴 글자 크기 살짝 작게 */
+  font-size: 18px;
   opacity: 0;
   max-height: 0;
   overflow: hidden;
-  transition: opacity 0.3s ease, max-height 0.3s ease; /* 하위 메뉴 부드럽게 나타나도록 */
+  transition: opacity 0.3s ease, max-height 0.3s ease;
 }
 
 .sub-menu.show {
   display: block;
   opacity: 1;
-  max-height: 500px; /* 적당한 크기로 변경 */
+  max-height: 500px;
 }
 
 .top-right {
