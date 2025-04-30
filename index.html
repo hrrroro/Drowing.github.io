@@ -24,6 +24,15 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script>
+    function toggleSubMenu() {
+      const subMenu = document.getElementById('subMenu');
+      if (subMenu.style.display === 'block') {
+        subMenu.style.display = 'none';
+      } else {
+        subMenu.style.display = 'block';
+      }
+    }
+  </script>
 </body>
 </html>
