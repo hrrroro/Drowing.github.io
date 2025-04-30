@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
@@ -13,31 +14,27 @@
     body {
       margin: 0;
       padding: 0;
-      background-color: #FFFAE6; /* 단색 배경 */
+      background-color: #FFFAE6;
       font-family: 'KCCImkwontaek', sans-serif;
       color: #000;
+      height: 100vh;
+      overflow: hidden;
     }
 
     .container {
       display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      height: 100vh;
-      padding: 2rem;
-    }
-
-    .left {
-      display: flex;
       flex-direction: column;
-      gap: 1rem;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 2rem 3rem;
+      height: 100%;
     }
 
     .title {
       font-size: 2.5rem;
-      color: #f08ca3; /* 핑크색 텍스트 */
+      color: #f08ca3;
       white-space: pre-line;
       margin-bottom: 2rem;
-      font-family: 'KCCImkwontaek', sans-serif;
     }
 
     .menu {
@@ -50,6 +47,12 @@
       top: 1rem;
       right: 2rem;
       font-size: 0.85rem;
+      font-family: sans-serif;
+    }
+
+    /* 깃허브 기본 스타일 제거 */
+    header {
+      display: none !important;
     }
   </style>
 </head>
@@ -57,17 +60,15 @@
   <div class="top-right">마음껏 그려보세요</div>
 
   <div class="container">
-    <div class="left">
-      <div class="title">Let's<br>Draw!</div>
-      <div class="menu">
-        Digital Painting<br>
-        장비<br>
-        그림툴<br>
-        그림체<br>
-        도서<br>
-        강의<br>
-        ect.
-      </div>
+    <div class="title">Let's<br>Draw!</div>
+    <div class="menu">
+      Digital Painting<br>
+      장비<br>
+      그림툴<br>
+      그림체<br>
+      도서<br>
+      강의<br>
+      ect.
     </div>
   </div>
 </body>
