@@ -1,16 +1,8 @@
-@font-face {
-  font-family: 'KCC-Imkwontaek';
-  src: url('fonts/KCC-Imkwontaek.woff') format('woff'),
-       url('fonts/KCC-Imkwontaek.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
   margin: 0;
   padding: 0;
   background: linear-gradient(45deg, #FFFAE6 25%, #FFFFFF 60%, #FFFAE6 100%);
-  font-family: 'KCC-Imkwontaek', sans-serif; /* 'KCC-Imkwontaek' 폰트 적용 */
+  font-family: 'KCC-Imkwontaek', sans-serif;
   color: #000;
   height: 100vh;
   overflow: hidden;
@@ -26,7 +18,16 @@ body {
   font-weight: normal;
 }
 
-/* 호버 색상 변경 제거 */
+/* '마음껏 그려보세요' 글자 크기를 하위 메뉴보다 작게 설정 */
+.top-right {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 16px; /* 메뉴 하위 메뉴보다 작은 글자 크기 설정 */
+  font-family: 'YDYGO100', sans-serif;
+  color: #7B7B7B;
+}
+
 .menu {
   font-size: 22px;
   font-family: 'YDYGO100', sans-serif;
@@ -49,7 +50,7 @@ body {
   margin-left: 1rem;
   display: none;
   line-height: 1.6;
-  font-size: 18px;
+  font-size: 18px; /* 하위 메뉴 글자 크기 */
   opacity: 0;
   max-height: 0;
   overflow: hidden;
@@ -60,13 +61,4 @@ body {
   display: block;
   opacity: 1;
   max-height: 500px;
-}
-
-.top-right {
-  position: absolute;
-  top: 1rem;
-  right: 2rem;
-  font-size: 20px;
-  font-family: 'YDYGO100', sans-serif;
-  color: #7B7B7B;
 }
