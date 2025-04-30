@@ -38,11 +38,12 @@ body {
   cursor: pointer;
   margin-bottom: 1rem;
   font-weight: bold;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease; /* hover 상태에서만 효과 */
 }
 
-.main-menu:active {
-  transform: scale(0.98);
+/* 마우스 오버 시에만 크기 변환 */
+.main-menu:hover {
+  transform: scale(1.05); /* 마우스 올리면 크기 살짝 커짐 */
 }
 
 .sub-menu {
