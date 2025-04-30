@@ -9,7 +9,7 @@
 <body>
   <div class="top-right">마음껏 그려보세요</div>
   <div class="container">
-    <div class="title">Let's<br>Draw!</div>
+    <a href="/" class="title">Let's<br>Draw!</a> <!-- 링크 추가 -->
 
     <div class="menu">
       <div class="main-menu" onclick="toggleSubMenu()">Digital Painting</div>
@@ -20,19 +20,10 @@
         <div>도서</div>
         <div>강의</div>
       </div>
-      <div class="main-menu">ect.</div>
+      <div class="main-menu">etc.</div>
     </div>
   </div>
 
-  <script>
-    function toggleSubMenu() {
-      const subMenu = document.getElementById('subMenu');
-      if (subMenu.style.display === 'block') {
-        subMenu.style.display = 'none';
-      } else {
-        subMenu.style.display = 'block';
-      }
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
