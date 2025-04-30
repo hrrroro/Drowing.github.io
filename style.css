@@ -22,7 +22,7 @@ body {
   position: absolute;
   top: 1rem;
   right: 2rem;
-  font-size: 16px;
+  font-size: 8px;  /* 매우 작은 크기 */
   font-family: 'YDYGO100', sans-serif;
   color: #7B7B7B;
 }
@@ -64,6 +64,11 @@ body {
   max-height: 0;
   overflow: hidden;
   transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+/* 첫 번째 메뉴의 하위 메뉴와 두 번째 메뉴 사이의 간격을 넓히기 위해 margin-bottom 추가 */
+.menu .main-menu:first-child + .sub-menu {
+  margin-bottom: 3rem; /* 하위 메뉴와 두 번째 메뉴 간격 확대 */
 }
 
 .sub-menu.show {
