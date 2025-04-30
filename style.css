@@ -15,7 +15,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #FFFAE6;
+  background: linear-gradient(45deg, #FFFAE6 25%, #FFFFFF 60%, #FFFAE6 100%);
   font-family: 'KCCImkwontaek', sans-serif;
   color: #000;
   height: 100vh;
@@ -37,7 +37,6 @@ body {
   color: #FFADAD;
   white-space: pre-line;
   margin-bottom: 2rem;
-  font-family: 'KCCImkwontaek', sans-serif;
 }
 
 .menu {
