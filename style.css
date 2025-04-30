@@ -14,17 +14,17 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   height: 100%;
-  margin: 0;
+  padding: 0 20px; /* 왼쪽 여백 추가 */
 }
 
 .title {
-  font-size: 80px;
-  color: #FFADAD;
+  font-size: 72px; /* 적당한 크기로 설정 */
+  color: #FFADAD; /* 부드럽고 따뜻한 색상 */
   white-space: pre-line;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   line-height: 1.1;
   text-decoration: none; /* 밑줄 제거 */
-  font-weight: normal; /* 글자 굵기 */
+  font-weight: normal;
 }
 
 .title:hover {
@@ -32,15 +32,16 @@ body {
 }
 
 .menu {
-  font-size: 20px;
+  font-size: 22px; /* 메뉴 글자 크기 */
   font-family: 'YDYGO100', sans-serif;
   color: #505050;
+  padding: 10px 0; /* 위아래 여백 추가 */
 }
 
 .main-menu {
   cursor: pointer;
-  margin-bottom: 0.5rem;
-  font-weight: bold; /* 메인 메뉴 글자 두껍게 */
+  margin-bottom: 1rem; /* 메뉴 항목 간 간격을 넓혀서 보기 좋게 */
+  font-weight: bold; /* 메뉴 글자 두껍게 */
   transition: transform 0.2s ease; /* 눌렀을 때 살짝 움직이는 효과 */
 }
 
