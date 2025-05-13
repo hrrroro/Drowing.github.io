@@ -1,78 +1,68 @@
+@font-face {
+  font-family: 'KCCImkwontaek';
+  src: url('fonts/KCCImkwontaek.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'YDYGO100';
+  src: url('fonts/YDYGO100.ttf') format('truetype');
+}
+
 body {
   margin: 0;
-  padding: 0;
-  background: linear-gradient(45deg, #FFFAE6 25%, #FFFFFF 60%, #FFFAE6 100%);
-  font-family: 'KCC-Imkwontaek', sans-serif;
-  color: #000;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.title {
-  font-size: 72px;
-  color: #FFADAD;
-  white-space: pre-line;
-  margin-bottom: 1.5rem;
-  line-height: 1.1;
-  text-decoration: none;
-  font-weight: normal;
-}
-
-.top-right {
-  position: absolute;
-  top: 1rem;
-  right: 2rem;
-  font-size: 8px;  /* 매우 작은 크기 */
+  background-color: #fbc6c6;
   font-family: 'YDYGO100', sans-serif;
-  color: #7B7B7B;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  height: 100%;
-  padding: 0 50px; /* 왼쪽, 오른쪽에 50px 여백 추가 */
+  width: 1134px;
+  height: 768px;
+  position: relative;
+  margin: 0 auto;
+  background-color: #fbc6c6;
+}
+
+.title {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  font-size: 48px;
+  color: #3399ff;
+  font-family: 'KCCImkwontaek', sans-serif;
+  line-height: 1.2;
+  white-space: pre-line;
 }
 
 .menu {
-  font-size: 22px;
+  position: absolute;
+  top: 160px;
+  left: 60px;
+  font-size: 16px;
+  color: #3d3d3d;
+  line-height: 2;
   font-family: 'YDYGO100', sans-serif;
-  color: #505050;
-  padding: 10px 0;
 }
 
-.main-menu {
-  cursor: pointer;
-  margin-bottom: 1rem;
+.menu strong {
   font-weight: bold;
-  transition: transform 0.2s ease;
 }
 
-/* 마우스 오버 시에만 크기 변환 */
-.main-menu:hover {
-  transform: scale(1.05);
+.text-block {
+  position: absolute;
+  top: 160px;
+  left: 600px;
+  width: 440px;
+  font-size: 14px;
+  color: #3d3d3d;
+  line-height: 1.8;
+  font-family: 'YDYGO100', sans-serif;
 }
 
-.sub-menu {
-  margin-left: 1rem;
-  display: none;
-  line-height: 1.6;
+.footer {
+  position: absolute;
+  bottom: 40px;
+  left: 500px;
   font-size: 18px;
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: opacity 0.3s ease, max-height 0.3s ease;
-}
-
-/* 첫 번째 메뉴의 하위 메뉴와 두 번째 메뉴 사이의 간격을 넓히기 위해 margin-bottom 추가 */
-.menu .main-menu:first-child + .sub-menu {
-  margin-bottom: 3rem; /* 하위 메뉴와 두 번째 메뉴 간격 확대 */
-}
-
-.sub-menu.show {
-  display: block;
-  opacity: 1;
-  max-height: 500px;
+  color: #3d3d3d;
+  font-family: 'YDYGO100', sans-serif;
 }
